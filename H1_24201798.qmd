@@ -34,7 +34,8 @@ ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   labs(
     title = "Petal Length vs Width by Species",
     x = "Petal Length (cm)",
-    y = "Petal Width (cm)"
+    y = "Petal Width (cm)",
+    caption = "Data: Built-in iris dataset | Viz: Rajveer Mishra"
   ) +
   theme_minimal()
 ```
