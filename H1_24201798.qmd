@@ -8,7 +8,8 @@ echo: False
 
 # **Introduction**
 
-Here, I have worked with the built-in `iris` dataset that comes with R. It’s a well-known dataset often used in beginner data science examples, and it contains measurements of flowers from three iris species — *setosa*, *versicolor*, and *virginica*. For each flower, we get four features: **sepal length**, **sepal width**, **petal length**, and **petal width**, all measured in centimeters.
+Here, I have worked with the built-in `iris` dataset that comes with R. It’s a well-known dataset often used in beginner data science examples, and it contains measurements of flowers from three iris species — *setosa*, *versicolor*, and *virginica*. For each flower, we get four features: **sepal length**, **sepal width**, **petal length**, and **petal width**, all measured in centimeters. This dataset is ideal for visual pattern recognition and classification practice.
+
 
 # **Quick Summary of the Data**
 
