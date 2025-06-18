@@ -1,0 +1,49 @@
+---
+title: "Homework 1"
+author: "Rajveer Shashikumar Mishra (24201798)"
+format: pdf
+editor: visual
+echo: False
+---
+
+# **Introduction**
+
+Here, I have worked with the built-in `iris` dataset that comes with R. It’s a well-known dataset often used in beginner data science examples, and it contains measurements of flowers from three iris species — *setosa*, *versicolor*, and *virginica*. For each flower, we get four features: **sepal length**, **sepal width**, **petal length**, and **petal width**, all measured in centimeters.
+
+# **Quick Summary of the Data**
+
+Before jumping into any plotting, I wanted to get a quick sense of what the dataset looks like. Here are a few key points:
+
+-   There are 3 different species in the dataset\
+-   **Petal.Length** values range from 1.0 cm to 6.9 cm\
+-   **Petal.Width** ranges from 0.1 cm to 2.5 cm
+
+Based on this, I decided to focus on the petal measurements since they seem quite useful for comparing the species.
+
+# **Plotting Petal Length vs Width**
+
+So in this section, I’ve made a scatter plot that shows how *Petal.Length* and *Petal.Width* relate to each other across the three species. I used `ggplot2` for this because it makes it really easy to add colour and style.
+
+```{r}
+library(ggplot2)
+
+# Create the scatter plot
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Petal Length vs Width by Species",
+    x = "Petal Length (cm)",
+    y = "Petal Width (cm)"
+  ) +
+  theme_minimal()
+```
+
+This scatter plot shows the relationship between petal length and width for three iris species.
+
+-   `Setosa (red)` is clearly separated in the bottom-left — small petals and no overlap with others.
+
+-   `Versicolor (green)` sits in the middle with moderate petal size and some overlap.
+
+-   `Virginica (blue)` has the largest petals and appears in the top-right.
+
+Overall, the plot shows a strong pattern — petal size is a good way to tell the species apart.
